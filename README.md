@@ -1,0 +1,4 @@
+Wordsmith
+=========
+
+Responsive Ghost Theme
