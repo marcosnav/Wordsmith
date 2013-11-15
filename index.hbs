@@ -1,0 +1,32 @@
+{{!< default}}
+
+<div id="description_wordsmith">
+	{{@blog.description}}
+</div>
+
+<section id="content_wordsmith">
+{{#foreach posts}}
+	<article class="article_wordsmith" role="article" itemscope itemtype="http://schema.org/Article">
+		<div class="leftborder_wordsmith"></div>
+		
+		<time class="date_wordsmith helv_wordsmith" datetime="{{date format='DD MMM YYYY'}}" itemprop="datePublished">{{date format='DD MMM YYYY'}}</time>{{#if tags}}<span class="helv_wordsmith"> on {{tags separator=", "}}</span>{{/if}}
+		
+		<h1 class="posttitle_wordsmith" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+		
+		<div class="postcontent_wordsmith">
+			{{excerpt}}
+		</div>
+
+		<a href="{{{url}}}" class="readmore_wordsmith helv_wordsmith">Read More</a>
+		
+	</article>
+{{/foreach}}
+</section>
+
+{{#if pagination}}
+<div id="pagination_wordsmith" class="helv_wordsmith">
+	{{{pagination}}}
+</div>
+{{/if}}
+
+{{> footer}}

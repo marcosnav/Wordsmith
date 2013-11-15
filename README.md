@@ -1,4 +1,18 @@
 Wordsmith
 =========
 
-Responsive Ghost Theme
+Responsive Ghost Theme with a touch of color.
+
+Fonts: Raleway and Noticia Text from Google Fonts.
+
+Personal expermient to understand and practice Ghost Theming
+
+
+Details
+=========
+
+Styling: The styling was made using Stylus. (File included)
+
+The core of animations, transitions and effects is within the main.js also included.
+
+Copyright (c) 2013 Marcos Navarro | Released under The MIT License.

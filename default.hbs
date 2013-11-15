@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{! Document Settings }}
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	{{! Page Meta }}
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}" />
+
+	{{! Styles }}
+	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway|Noticia+Text:400,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+ 
+	{{! Responsive Meta Tags }}
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
+{{ghost_head}}
+</head>
+<body class="{{body_class}}">
+	<header id="header_wordsmith" {{#if @blog.cover}}style="background-color: black"{{/if}}>
+		{{#if @blog.cover}}<img id="cover_wordsmith" src="{{@blog.cover}}">{{/if}}
+		{{#if @blog.logo}}<a href="{{@blog.url}}"><img id="logo_wordsmith" src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+		{{else}}<a id="blogname_wordsmith" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
+		{{/if}}
+		<br>
+		<div class="colorborder_wordsmith color_ws1"></div><div class="colorborder_wordsmith color_ws2"></div><div class="colorborder_wordsmith color_ws3"></div><div class="colorborder_wordsmith color_ws4"></div>
+	</header>
+
+	{{{body}}}
+ 	
+ 	{{ghost_foot}}
+ 	<script src="/assets/js/main.js"></script>
+</body>
+</html>

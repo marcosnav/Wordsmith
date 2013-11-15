@@ -1,0 +1,42 @@
+{{!< default}}
+
+<section id="content_wordsmith">
+{{#post}}
+	<article class="article_wordsmith" role="article" itemscope itemtype="http://schema.org/Article">
+		
+		<time class="date_wordsmith helv_wordsmith" datetime="{{date format='DD MMM YYYY'}}" itemprop="datePublished">{{date format='DD MMM YYYY'}}</time>{{#if tags}}<span class="helv_wordsmith"> on {{tags separator=", "}}</span>{{/if}}
+		
+		<h1 class="posttitle_wordsmith" itemprop="headline">{{title}}</h1>
+		
+		<div class="postcontent_wordsmith">
+			{{content}}
+		</div>
+
+		{{#if author}}
+	    <div id="author_wordsmith">
+		    <address itemscope itemtype="http://schema.org/Person">
+			    {{#if author.image}}
+			    	<div class="authorimage_wordsmith"><img src="{{author.image}}" itemprop="image" /></div>
+			    {{/if}}
+			    	<div class="authordata_wordsmith">
+			    		<span itemprop="author">{{author.name}}</span><br>
+			    		{{#if author.website}}
+			    		<a href="{{author.website}}" itemprop="url">{{author.website}}</a>
+			    		<p>{{author.bio}}</p>
+			    		{{/if}}
+			    	</div>
+		    </address>
+	    </div>
+	    {{/if}}
+		
+	</article>
+{{/post}}
+</section>
+
+{{#if pagination}}
+<div id="pagination_wordsmith" class="helv_wordsmith">
+	{{{pagination}}}
+</div>
+{{/if}}
+
+{{> footer}}
