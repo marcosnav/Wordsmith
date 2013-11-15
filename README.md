@@ -22,4 +22,6 @@ Copyright (c) 2013 Marcos Navarro | Released under The MIT License.
 Contributions
 =========
 
-Feel freee to contribute and report any bug. Thank you.
+Feel free to contribute and report any bug. Thank you.
+
+Also you can find me on marcosn.com and twitter/marcosnwp
