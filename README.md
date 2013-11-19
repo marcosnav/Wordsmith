@@ -19,6 +19,12 @@ The core of animations, transitions and effects is within the main.js also inclu
 Copyright (c) 2013 Marcos Navarro | Released under The MIT License.
 
 
+Changelog
+=========
+
+Look at CHANGELOG.md for the full details
+
+
 Contributions
 =========
 
