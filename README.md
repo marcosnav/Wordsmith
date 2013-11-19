@@ -8,6 +8,8 @@ Iconfonts: Icomoon.io
 
 Personal expermient to understand and practice Ghost Theming
 
+See Wordsmith up and running here: <a href="http://wordsmith.marcosn.com">Running Wordsmith</a>.
+
 
 Details
 =========
