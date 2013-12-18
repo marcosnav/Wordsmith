@@ -1,7 +1,10 @@
 # Wordsmith Ghost Theme Changelog
 
-_Showing 1 releases._
+_Showing 3 releases._
 
+## Release 1.0.2
+
+* CSS adjustments for images and "pre" & "code" tags.
 
 ## Release 1.0.1
 
