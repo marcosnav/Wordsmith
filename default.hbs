@@ -2,7 +2,7 @@
 <html>
 <head>
 	{{! Document Settings }}
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	{{! Page Meta }}
@@ -10,9 +10,10 @@
 	<meta name="description" content="{{meta_description}}" />
 
 	{{! Styles }}
-	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
-	<link href='http://fonts.googleapis.com/css?family=Raleway|Noticia+Text:400,400italic,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
+	<link href='//fonts.googleapis.com/css?family=Raleway|Noticia+Text:400,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
  
 	{{! Responsive Meta Tags }}
 	<meta name="HandheldFriendly" content="True" />
@@ -33,10 +34,10 @@
 
 	{{{body}}}
 
-	<footer class="footer_uber">
+	<footer class="footer_wordsmith">
 		<div id="socialshare_wordsmith">
 			<a target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="iconfont_wordsmith icon-facebook"></span></a>
-			<a target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="iconfont_wordsmith icon-twitter"></span></a>
+			<a target="_blank" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"><span class="iconfont_wordsmith icon-twitter"></span></a>
 			<a target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="iconfont_wordsmith icon-google-plus"></span></a>
 			<a target="_blank" href="{{@blog.url}}/rss/"><span class="iconfont_wordsmith icon-feed"></span></a>
 		</div>
@@ -45,6 +46,8 @@
 	</footer>
  	
  	{{ghost_foot}}
+ 	<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+ 	<script>hljs.initHighlightingOnLoad();</script>
  	<script src="/assets/js/main.js"></script>
 </body>
 </html>
